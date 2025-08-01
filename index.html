@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-50 text-gray-800">
-    <!-- Górny pasek nawigacyjny -->
+    
     <nav class="bg-white shadow-md sticky top-0 z-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
@@ -16,22 +16,22 @@
             <span class="font-bold text-xl text-pink-600">💼 Обучение</span>
           </div>
   
-          <!-- Menu desktop -->
+         
           <div class="hidden md:flex space-x-6">
-            <a href="#module1" class="hover:text-pink-600 transition">Модуль 1</a>
+            <a href="./moduleOne/basis.html" class="hover:text-pink-600 transition">Модуль 1</a>
             <a href="#module2" class="hover:text-pink-600 transition">Модуль 2</a>
             <a href="#module3" class="hover:text-pink-600 transition">Модуль 3</a>
             <a href="#library" class="hover:text-pink-600 transition">Библиотека</a>
           </div>
   
-          <!-- Select języka -->
+          
           <div class="hidden md:block">
             <select class="border border-gray-300 rounded px-2 py-1 text-sm text-gray-700">
               <option value="ru">Русский</option>
             </select>
           </div>
   
-          <!-- Hamburger (mobile) -->
+          
           <div class="md:hidden">
             <button id="menu-toggle" class="text-gray-600 focus:outline-none focus:text-pink-600">
               ☰
@@ -40,7 +40,7 @@
         </div>
       </div>
   
-      <!-- Mobile menu -->
+     
       <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2">
         <a href="#module1" class="block hover:text-pink-600">Модуль 1</a>
         <a href="#module2" class="block hover:text-pink-600">Модуль 2</a>
@@ -52,9 +52,10 @@
       </div>
     </nav>
   
-    <!-- Główna treść -->
+    
     <main class="max-w-4xl mx-auto px-4 py-10">
-      <header class="mb-10 text-center">
+        <section class="content-section">
+        <header class="mb-10 text-center">
         <h1 class="text-3xl font-bold">Добро пожаловать!</h1>
         <p class="text-gray-600 mt-2">Это ваша внутренняя обучающая система для чаттеров на OnlyFans.</p>
       </header>
@@ -79,6 +80,7 @@
         <h2 class="text-2xl font-semibold mb-4">Библиотека</h2>
         <p>Словарь терминов, типичные ошибки, рекомендации и FAQ.</p>
       </section>
+        </section>
     </main>
   
     <script>

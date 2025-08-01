@@ -8,53 +8,87 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-50 text-gray-800">
-  <div class="flex min-h-screen">
-    <aside class="w-64 bg-white shadow-md p-6">
-      <h2 class="text-xl font-bold mb-4">Меню</h2>
-      <nav class="space-y-2">
-        <a href="#module1" class="block hover:text-indigo-600">Модуль 1: Основы</a>
-        <a href="#module2" class="block hover:text-indigo-600">Модуль 2: Продажи</a>
-        <a href="#module3" class="block hover:text-indigo-600">Модуль 3: Общение</a>
-        <a href="#library" class="block hover:text-indigo-600">Библиотека</a>
-      </nav>
-      <div class="mt-10">
-        <label class="block text-sm text-gray-500 mb-1">Язык:</label>
-        <select class="w-full border rounded px-2 py-1">
+    <!-- Górny pasek nawigacyjny -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center space-x-4">
+            <span class="font-bold text-xl text-pink-600">💼 Обучение</span>
+          </div>
+  
+          <!-- Menu desktop -->
+          <div class="hidden md:flex space-x-6">
+            <a href="#module1" class="hover:text-pink-600 transition">Модуль 1</a>
+            <a href="#module2" class="hover:text-pink-600 transition">Модуль 2</a>
+            <a href="#module3" class="hover:text-pink-600 transition">Модуль 3</a>
+            <a href="#library" class="hover:text-pink-600 transition">Библиотека</a>
+          </div>
+  
+          <!-- Select języka -->
+          <div class="hidden md:block">
+            <select class="border border-gray-300 rounded px-2 py-1 text-sm text-gray-700">
+              <option value="ru">Русский</option>
+            </select>
+          </div>
+  
+          <!-- Hamburger (mobile) -->
+          <div class="md:hidden">
+            <button id="menu-toggle" class="text-gray-600 focus:outline-none focus:text-pink-600">
+              ☰
+            </button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2">
+        <a href="#module1" class="block hover:text-pink-600">Модуль 1</a>
+        <a href="#module2" class="block hover:text-pink-600">Модуль 2</a>
+        <a href="#module3" class="block hover:text-pink-600">Модуль 3</a>
+        <a href="#library" class="block hover:text-pink-600">Библиотека</a>
+        <select class="w-full border mt-2 border-gray-300 rounded px-2 py-1 text-sm text-gray-700">
           <option value="ru">Русский</option>
-          <!-- <option value="uk">Українська</option> -->
         </select>
       </div>
-    </aside>
-
-    <main class="flex-1 p-10">
-      <header class="mb-10">
-        <h1 class="text-3xl font-bold ">Добро пожаловать!</h1>
+    </nav>
+  
+    <!-- Główna treść -->
+    <main class="max-w-4xl mx-auto px-4 py-10">
+      <header class="mb-10 text-center">
+        <h1 class="text-3xl font-bold">Добро пожаловать!</h1>
         <p class="text-gray-600 mt-2">Это ваша внутренняя обучающая система для чаттеров на OnlyFans.</p>
       </header>
-
+  
       <section id="module1" class="mb-16">
         <h2 class="text-2xl font-semibold mb-4">Модуль 1: Основы</h2>
         <p>Психология общения, стратегия вовлечения, установление доверия...</p>
-        <a href="moduleOne/basis.html"> more... </a>
+        <a href="moduleOne/basis.html" class="text-pink-600 hover:underline">Подробнее...</a>
       </section>
-
+  
       <section id="module2" class="mb-16">
         <h2 class="text-2xl font-semibold mb-4">Модуль 2: Продажи</h2>
         <p>Как распознать сигналы покупки, лестница продаж, работа с возражениями.</p>
-        <!-- <a href="moduleTwo/sells.html"> more... </a> -->
-    </section>
-
+      </section>
+  
       <section id="module3" class="mb-16">
         <h2 class="text-2xl font-semibold mb-4">Модуль 3: Общение</h2>
         <p>Скрипты, поведение в чате, построение персональных связей.</p>
       </section>
-
+  
       <section id="library">
         <h2 class="text-2xl font-semibold mb-4">Библиотека</h2>
         <p>Словарь терминов, типичные ошибки, рекомендации и FAQ.</p>
       </section>
     </main>
-  </div>
-</body>
+  
+    <script>
+      const toggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('mobile-menu');
+      toggle.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    </script>
+  </body>
+  
 </html>
 

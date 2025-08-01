@@ -6,6 +6,11 @@ body {
     padding: 20px;
     max-width: 100%;
     margin: auto;
+    align-items: center;
+    
+  }
+  #module {
+    justify-items: center;
   }
   h1, h2, h3 {
     color: #E91E63;

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Обучающая платформа</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <div class="flex min-h-screen">
+    <aside class="w-64 bg-white shadow-md p-6">
+      <h2 class="text-xl font-bold mb-4">Меню</h2>
+      <nav class="space-y-2">
+        <a href="#module1" class="block hover:text-indigo-600">Модуль 1: Основы</a>
+        <a href="#module2" class="block hover:text-indigo-600">Модуль 2: Продажи</a>
+        <a href="#module3" class="block hover:text-indigo-600">Модуль 3: Общение</a>
+        <a href="#library" class="block hover:text-indigo-600">Библиотека</a>
+      </nav>
+      <div class="mt-10">
+        <label class="block text-sm text-gray-500 mb-1">Язык:</label>
+        <select class="w-full border rounded px-2 py-1">
+          <option value="ru">Русский</option>
+          <!-- <option value="uk">Українська</option> -->
+        </select>
+      </div>
+    </aside>
+
+    <main class="flex-1 p-10">
+      <header class="mb-10">
+        <h1 class="text-3xl font-bold ">Добро пожаловать!</h1>
+        <p class="text-gray-600 mt-2">Это ваша внутренняя обучающая система для чаттеров на OnlyFans.</p>
+      </header>
+
+      <section id="module1" class="mb-16">
+        <h2 class="text-2xl font-semibold mb-4">Модуль 1: Основы</h2>
+        <p>Психология общения, стратегия вовлечения, установление доверия...</p>
+        <a href="moduleOne/basis.html"> more... </a>
+      </section>
+
+      <section id="module2" class="mb-16">
+        <h2 class="text-2xl font-semibold mb-4">Модуль 2: Продажи</h2>
+        <p>Как распознать сигналы покупки, лестница продаж, работа с возражениями.</p>
+        <a href="moduleTwo/sells.html"> more... </a>
+    </section>
+
+      <section id="module3" class="mb-16">
+        <h2 class="text-2xl font-semibold mb-4">Модуль 3: Общение</h2>
+        <p>Скрипты, поведение в чате, построение персональных связей.</p>
+      </section>
+
+      <section id="library">
+        <h2 class="text-2xl font-semibold mb-4">Библиотека</h2>
+        <p>Словарь терминов, типичные ошибки, рекомендации и FAQ.</p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
+

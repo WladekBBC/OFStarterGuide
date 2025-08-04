@@ -27,7 +27,8 @@
           
           <div class="hidden md:block">
             <select class="border border-gray-300 rounded px-2 py-1 text-sm text-gray-700">
-              <option value="ru">Русский</option>
+              <option value="./index.html">Русский</option>
+              <option value="./indexUA/indexUA.html">Українська</option>
             </select>
           </div>
   
@@ -47,7 +48,8 @@
         <a href="./moduleThree/chatterbox.html" class="block hover:text-pink-600">Модуль 3</a>
         <a href="./library/library.html" class="block hover:text-pink-600">Библиотека</a>
         <select class="w-full border mt-2 border-gray-300 rounded px-2 py-1 text-sm text-gray-700">
-          <option value="ru">Русский</option>
+          <option value="./index.html">Русский</option>
+          <option value="./indexUA/indexUA.html">Українська</option>
         </select>
       </div>
     </nav>
@@ -91,6 +93,13 @@
       const menu = document.getElementById('mobile-menu');
       toggle.addEventListener('click', () => {
         menu.classList.toggle('hidden');
+      });
+      const selects = document.querySelectorAll('select');
+      selects.forEach(select => {
+      select.addEventListener('change', (e) => {
+      const url = e.target.value;
+      window.location.href = url;
+        });
       });
     </script>
   </body>

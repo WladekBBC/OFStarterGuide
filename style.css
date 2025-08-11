@@ -21,7 +21,7 @@ body {
     margin: auto;
     max-width: 900px;
   }
-  h1, h2, h3 {
+  h1, h2, h3, a {
     color: #E91E63;
   }
   h1 {

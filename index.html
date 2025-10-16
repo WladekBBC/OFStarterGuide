@@ -1,100 +1,155 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <!-- <meta name="color-scheme" content="light dark" /> -->
-  <link rel="icon" type="image/png" href="./content/faviconOF.jpg">
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Обучающая платформа</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-50 text-gray-800">
-
+  <head>
+    <!-- <meta name="color-scheme" content="light dark" /> -->
+    <link rel="icon" type="image/jpeg" href="./content/faviconOF.jpg" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Внутренняя обучающая платформа для чаттеров OnlyFans: модули по основам, продажам, общению и библиотека материалов." />
+    <meta name="keywords" content="JavaScript, HTML5, CSS3" />
+    <meta name="author" content="Vladyslav Berezhnyi" />
+    <title>Обучающая платформа</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
     <nav class="bg-white shadow-md sticky top-0 z-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
           <div class="flex items-center space-x-4">
             <span class="font-bold text-xl text-pink-600">💼 Обучение</span>
           </div>
-  
+
           <div class="hidden md:flex space-x-6">
-            <a href="./moduleOne/basis.html" class="hover:text-pink-600 transition">Модуль 1</a>
-            <a href="./moduleTwo/sells.html" class="hover:text-pink-600 transition">Модуль 2</a>
-            <a href="./moduleThree/chatterbox.html" class="hover:text-pink-600 transition">Модуль 3</a>
-            <a href="./library/library.html" class="hover:text-pink-600 transition">Библиотека</a>
+            <a
+              href="./moduleOne/basis.html"
+              class="hover:text-pink-600 transition"
+              >Модуль 1</a
+            >
+            <a
+              href="./moduleTwo/sells.html"
+              class="hover:text-pink-600 transition"
+              >Модуль 2</a
+            >
+            <a
+              href="./moduleThree/chatterbox.html"
+              class="hover:text-pink-600 transition"
+              >Модуль 3</a
+            >
+            <a
+              href="./library/library.html"
+              class="hover:text-pink-600 transition"
+              >Библиотека</a
+            >
           </div>
-  
+
           <div class="hidden md:block">
-            <select class="border border-gray-300 rounded px-2 py-1 text-sm text-gray-700">
+            <select
+              class="border border-gray-300 rounded px-2 py-1 text-sm text-gray-700"
+            >
               <option value="./index.html">Русский</option>
               <option value="./indexUA/indexUA.html">Українська</option>
             </select>
           </div>
-  
+
           <div class="md:hidden">
-            <button id="menu-toggle" class="text-gray-600 focus:outline-none focus:text-pink-600">
+            <button
+              id="menu-toggle"
+              class="text-gray-600 focus:outline-none focus:text-pink-600"
+            >
               ☰
             </button>
           </div>
         </div>
       </div>
-  
+
       <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2 w-100">
-        <a href="./moduleOne/basis.html" class="block hover:text-pink-600">Модуль 1</a>
-        <a href="./moduleTwo/sells.html" class="block hover:text-pink-600">Модуль 2</a>
-        <a href="./moduleThree/chatterbox.html" class="block hover:text-pink-600">Модуль 3</a>
-        <a href="./library/library.html" class="block hover:text-pink-600">Библиотека</a>
-        <select class="w-full border mt-2 border-gray-300 rounded px-2 py-1 text-sm text-gray-700">
+        <a href="./moduleOne/basis.html" class="block hover:text-pink-600"
+          >Модуль 1</a
+        >
+        <a href="./moduleTwo/sells.html" class="block hover:text-pink-600"
+          >Модуль 2</a
+        >
+        <a
+          href="./moduleThree/chatterbox.html"
+          class="block hover:text-pink-600"
+          >Модуль 3</a
+        >
+        <a href="./library/library.html" class="block hover:text-pink-600"
+          >Библиотека</a
+        >
+        <select
+          class="w-full border mt-2 border-gray-300 rounded px-2 py-1 text-sm text-gray-700"
+        >
           <option value="./index.html">Русский</option>
           <option value="./indexUA/indexUA.html">Українська</option>
         </select>
       </div>
     </nav>
-  
+
     <main class="max-w-4xl mx-auto px-4 py-10">
-        <section class="max-w-full p-10 m-auto rounded-sm bg-white shadow-xl">
+      <section class="max-w-full p-10 m-auto rounded-sm bg-white shadow-xl">
         <header class="mb-10 text-center">
-        <h1 class="text-3xl font-bold">Добро пожаловать!</h1>
-        <p class="text-gray-600 mt-2">Это ваша внутренняя обучающая система для чаттеров на OnlyFans.</p>
-      </header>
-  
-      <section id="module1" class="mb-16">
-        <h2 class="text-2xl font-semibold mb-4">Модуль 1: Основы</h2>
-        <p>Психология общения, стратегия вовлечения, установление доверия...</p>
-        <a href="moduleOne/basis.html" class="text-pink-600 hover:underline">Подробнее...</a>
-      </section>
-  
-      <section id="module2" class="mb-16">
-        <h2 class="text-2xl font-semibold mb-4">Модуль 2: Продажи</h2>
-        <p>Как распознать сигналы покупки, лестница продаж, работа с возражениями.</p>
-        <a href="moduleTwo/sells.html" class="text-pink-600 hover:underline">Подробнее...</a>
-      </section>
-  
-      <section id="module3" class="mb-16">
-        <h2 class="text-2xl font-semibold mb-4">Модуль 3: Общение</h2>
-        <p>Скрипты, поведение в чате, построение персональных связей.</p>
-        <a href="moduleThree/chatterbox.html" class="text-pink-600 hover:underline">Подробнее...</a>
-      </section>
-  
-      <section id="library">
-        <h2 class="text-2xl font-semibold mb-4">Библиотека</h2>
-        <p>Словарь терминов, архив видео, вспомогателные файлы, типичные ошибки, рекомендации.</p>
-        <a href="./library/library.html" class="text-pink-600 hover:underline">Подробнее...</a>
-    </section>
+          <h1 class="text-3xl font-bold">Добро пожаловать!</h1>
+          <p class="text-gray-600 mt-2">
+            Это ваша внутренняя обучающая система для чаттеров на OnlyFans.
+          </p>
+        </header>
+
+        <section id="module1" class="mb-16">
+          <h2 class="text-2xl font-semibold mb-4">Модуль 1: Основы</h2>
+          <p>
+            Психология общения, стратегия вовлечения, установление доверия...
+          </p>
+          <a href="moduleOne/basis.html" class="text-pink-600 hover:underline"
+            >Подробнее...</a
+          >
         </section>
+
+        <section id="module2" class="mb-16">
+          <h2 class="text-2xl font-semibold mb-4">Модуль 2: Продажи</h2>
+          <p>
+            Как распознать сигналы покупки, лестница продаж, работа с
+            возражениями.
+          </p>
+          <a href="moduleTwo/sells.html" class="text-pink-600 hover:underline"
+            >Подробнее...</a
+          >
+        </section>
+
+        <section id="module3" class="mb-16">
+          <h2 class="text-2xl font-semibold mb-4">Модуль 3: Общение</h2>
+          <p>Скрипты, поведение в чате, построение персональных связей.</p>
+          <a
+            href="moduleThree/chatterbox.html"
+            class="text-pink-600 hover:underline"
+            >Подробнее...</a
+          >
+        </section>
+
+        <section id="library">
+          <h2 class="text-2xl font-semibold mb-4">Библиотека</h2>
+          <p>
+            Словарь терминов, архив видео, вспомогателные файлы, типичные
+            ошибки, рекомендации.
+          </p>
+          <a href="./library/library.html" class="text-pink-600 hover:underline"
+            >Подробнее...</a
+          >
+        </section>
+      </section>
     </main>
-  
+
     <script>
-      const toggle = document.getElementById('menu-toggle');
-      const menu = document.getElementById('mobile-menu');
-      toggle.addEventListener('click', () => {
-        menu.classList.toggle('hidden');
+      const toggle = document.getElementById("menu-toggle");
+      const menu = document.getElementById("mobile-menu");
+      toggle.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
       });
-      const selects = document.querySelectorAll('select');
-      selects.forEach(select => {
-      select.addEventListener('change', (e) => {
-      const url = e.target.value;
-      window.location.href = url;
+      const selects = document.querySelectorAll("select");
+      selects.forEach((select) => {
+        select.addEventListener("change", (e) => {
+          const url = e.target.value;
+          window.location.href = url;
         });
       });
     </script>

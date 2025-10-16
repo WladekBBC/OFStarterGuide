@@ -1,107 +1,163 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-  <link rel="icon" type="image/png" href="./content/faviconOF.jpg">
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Навчальна платформа</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-50 text-gray-800">
-
+  <head>
+    <link rel="icon" type="image/jpeg" href="../content/faviconOF.jpg" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Внутрішня навчальна платформа для чатерів OnlyFans: модулі з основ, продажів, спілкування та бібліотека матеріалів." />
+    <meta name="keywords" content="JavaScript, HTML5, CSS3" />
+    <meta name="author" content="Vladyslav Berezhnyi" />
+    <title>Навчальна платформа</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
     <nav class="bg-white shadow-md sticky top-0 z-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
           <div class="flex items-center space-x-4">
             <span class="font-bold text-xl text-pink-600">💼 Навчання</span>
           </div>
-  
-         
+
           <div class="hidden md:flex space-x-6">
-            <a href="../moduleOne/basisUA.html" class="hover:text-pink-600 transition">Модуль 1</a>
-            <a href="../moduleTwo/sellsUA.html" class="hover:text-pink-600 transition">Модуль 2</a>
-            <a href="../moduleThree/chatterboxUA.html" class="hover:text-pink-600 transition">Модуль 3</a>
-            <a href="../library/libraryUA.html" class="hover:text-pink-600 transition">Бібліотека</a>
+            <a
+              href="../moduleOne/basisUA.html"
+              class="hover:text-pink-600 transition"
+              >Модуль 1</a
+            >
+            <a
+              href="../moduleTwo/sellsUA.html"
+              class="hover:text-pink-600 transition"
+              >Модуль 2</a
+            >
+            <a
+              href="../moduleThree/chatterboxUA.html"
+              class="hover:text-pink-600 transition"
+              >Модуль 3</a
+            >
+            <a
+              href="../library/libraryUA.html"
+              class="hover:text-pink-600 transition"
+              >Бібліотека</a
+            >
           </div>
-  
-          
+
           <div class="hidden md:block">
-            <select id="language-select" class="border border-gray-300 rounded px-2 py-1 text-sm text-gray-700">
+            <select
+              id="language-select"
+              class="border border-gray-300 rounded px-2 py-1 text-sm text-gray-700"
+            >
               <option value="../index.html">Русский</option>
               <option value="./indexUA.html" selected>Українська</option>
             </select>
           </div>
-  
-          
+
           <div class="md:hidden">
-            <button id="menu-toggle" class="text-gray-600 focus:outline-none focus:text-pink-600">
+            <button
+              id="menu-toggle"
+              class="text-gray-600 focus:outline-none focus:text-pink-600"
+            >
               ☰
             </button>
           </div>
         </div>
       </div>
-  
-     
+
       <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2 w-100">
-        <a href="../moduleOne/basisUA.html" class="block hover:text-pink-600">Модуль 1</a>
-        <a href="../moduleTwo/sellsUA.html" class="block hover:text-pink-600">Модуль 2</a>
-        <a href="../moduleThree/chatterboxUA.html" class="block hover:text-pink-600">Модуль 3</a>
-        <a href="../library/libraryUA.html" class="block hover:text-pink-600">Бібліотека</a>
-        <select class="w-full border mt-2 border-gray-300 rounded px-2 py-1 text-sm text-gray-700">
-            <option value="../index.html">Русский</option>
-            <option value="./indexUA.html" selected>Українська</option>
+        <a href="../moduleOne/basisUA.html" class="block hover:text-pink-600"
+          >Модуль 1</a
+        >
+        <a href="../moduleTwo/sellsUA.html" class="block hover:text-pink-600"
+          >Модуль 2</a
+        >
+        <a
+          href="../moduleThree/chatterboxUA.html"
+          class="block hover:text-pink-600"
+          >Модуль 3</a
+        >
+        <a href="../library/libraryUA.html" class="block hover:text-pink-600"
+          >Бібліотека</a
+        >
+        <select
+          class="w-full border mt-2 border-gray-300 rounded px-2 py-1 text-sm text-gray-700"
+        >
+          <option value="../index.html">Русский</option>
+          <option value="./indexUA.html" selected>Українська</option>
         </select>
       </div>
     </nav>
-  
-    <main class="max-w-4xl mx-auto px-4 py-10">
 
-        <section class="max-w-full p-10 m-auto rounded-sm bg-white shadow-xl">
-            <header class="mb-10 text-center">
-            <h1 class="text-3xl font-bold">Ласкаво просимо!</h1>
-            <p class="text-gray-600 mt-2">Це ваша внутрішня навчальна система для чаттерів на OnlyFans.</p>
-          </header>
+    <main class="max-w-4xl mx-auto px-4 py-10">
+      <section class="max-w-full p-10 m-auto rounded-sm bg-white shadow-xl">
+        <header class="mb-10 text-center">
+          <h1 class="text-3xl font-bold">Ласкаво просимо!</h1>
+          <p class="text-gray-600 mt-2">
+            Це ваша внутрішня навчальна система для чаттерів на OnlyFans.
+          </p>
+        </header>
 
         <section id="module1" class="mb-16">
-            <h2 class="text-2xl font-semibold mb-4">Модуль 1: Основи</h2>
-            <p>Психологія спілкування, стратегія залучення, встановлення довіри...</p>
-            <a href="../moduleOne/basisUA.html" class="text-pink-600 hover:underline">Докладніше...</a>
-          </section>
-          
-          <section id="module2" class="mb-16">
-            <h2 class="text-2xl font-semibold mb-4">Модуль 2: Продажі</h2>
-            <p>Як розпізнати сигнали купівлі, сходи продажів, робота з запереченнями.</p>
-            <a href="../moduleTwo/sellsUA.html" class="text-pink-600 hover:underline">Докладніше...</a>
-          </section>
-          
-          <section id="module3" class="mb-16">
-            <h2 class="text-2xl font-semibold mb-4">Модуль 3: Спілкування</h2>
-            <p>Скрипти, поведінка в чаті, побудова персональних зв’язків.</p>
-            <a href="../moduleThree/chatterboxUA.html" class="text-pink-600 hover:underline">Докладніше...</a>
-          </section>
-          
-          <section id="library">
-            <h2 class="text-2xl font-semibold mb-4">Бібліотека</h2>
-            <p>Словник термінів, архів відео, допоміжні файли, типові помилки, рекомендації.</p>
-            <a href="../library/libraryUA.html" class="text-pink-600 hover:underline">Докладніше...</a>
-          </section>
+          <h2 class="text-2xl font-semibold mb-4">Модуль 1: Основи</h2>
+          <p>
+            Психологія спілкування, стратегія залучення, встановлення довіри...
+          </p>
+          <a
+            href="../moduleOne/basisUA.html"
+            class="text-pink-600 hover:underline"
+            >Докладніше...</a
+          >
         </section>
-    </main>
-  
-    <script>
-      const toggle = document.getElementById('menu-toggle');
-      const menu = document.getElementById('mobile-menu');
-      toggle.addEventListener('click', () => {
-        menu.classList.toggle('hidden');
-      });
-      const selects = document.querySelectorAll('select');
-      selects.forEach(select => {
-      select.addEventListener('change', (e) => {
-      const url = e.target.value;
-      window.location.href = url;
-    });
-  });
-    </script>
 
+        <section id="module2" class="mb-16">
+          <h2 class="text-2xl font-semibold mb-4">Модуль 2: Продажі</h2>
+          <p>
+            Як розпізнати сигнали купівлі, сходи продажів, робота з
+            запереченнями.
+          </p>
+          <a
+            href="../moduleTwo/sellsUA.html"
+            class="text-pink-600 hover:underline"
+            >Докладніше...</a
+          >
+        </section>
+
+        <section id="module3" class="mb-16">
+          <h2 class="text-2xl font-semibold mb-4">Модуль 3: Спілкування</h2>
+          <p>Скрипти, поведінка в чаті, побудова персональних зв’язків.</p>
+          <a
+            href="../moduleThree/chatterboxUA.html"
+            class="text-pink-600 hover:underline"
+            >Докладніше...</a
+          >
+        </section>
+
+        <section id="library">
+          <h2 class="text-2xl font-semibold mb-4">Бібліотека</h2>
+          <p>
+            Словник термінів, архів відео, допоміжні файли, типові помилки,
+            рекомендації.
+          </p>
+          <a
+            href="../library/libraryUA.html"
+            class="text-pink-600 hover:underline"
+            >Докладніше...</a
+          >
+        </section>
+      </section>
+    </main>
+
+    <script>
+      const toggle = document.getElementById("menu-toggle");
+      const menu = document.getElementById("mobile-menu");
+      toggle.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+      const selects = document.querySelectorAll("select");
+      selects.forEach((select) => {
+        select.addEventListener("change", (e) => {
+          const url = e.target.value;
+          window.location.href = url;
+        });
+      });
+    </script>
   </body>
 </html>

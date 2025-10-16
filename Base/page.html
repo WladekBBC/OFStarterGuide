@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Prosty szkielet MPA – podstrona" />
+    <meta name="author" content="Base Template" />
+    <link rel="icon" type="image/jpeg" href="../content/faviconOF.jpg" />
+    <title>Base | Page</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./index.html">Base</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">☰</button>
+        <nav id="site-nav" class="site-nav">
+          <a href="./index.html" class="nav-link" data-nav>Home</a>
+          <a href="./page.html" class="nav-link" data-nav aria-current="page">Example page</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <article class="card">
+        <h1>Przykładowa podstrona</h1>
+        <p>
+          To jest prosta podstrona w szkielecie MPA. Użyj tego pliku jako
+          punktu wyjścia do tworzenia kolejnych stron: skopiuj i zmień tytuł,
+          opis oraz treść.
+        </p>
+        <p>
+          W nawigacji link do aktualnej strony ma atrybut <code>aria-current="page"</code>.
+        </p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© Base MPA Template</small>
+      </div>
+    </footer>
+  </body>
+  </html>
+
+
